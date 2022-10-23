@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 // Reto 1, ¿Es un anagrama?  Ej tren, rent is true rent contiene tren
 
