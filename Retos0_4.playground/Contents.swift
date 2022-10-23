@@ -39,30 +39,3 @@ func comprobarAnagrama(_ str1: String,_ str2: String) -> Bool {
 
 print(comprobarAnagrama("hola", "latahona"),"\n") // True { son Anagrama } else { no lo son }
 
-var title = "hola"
-var countries = ["estonia", "france", "germany"]
-var cc = ["madrid", "morocco", "germany"]
-var aux = countries
-var aux1 = ["","",""]
-
-
-
-func auxSufle() {
-    //countries.shuffle()
-    aux = countries.shuffled()
-    print("au1: ",aux1)
-    print("aux: ",aux[0...2])
-    while aux[0] == aux1[0]{
-        aux = countries.shuffled()
-    }
-    print("aux: ",aux[0...2],"\n")
-    aux1[0...2] = aux[0...2]
-    
-}
-
-
-
-//
-//for _ in 0..<20 {
-//    auxSufle()
-//}
