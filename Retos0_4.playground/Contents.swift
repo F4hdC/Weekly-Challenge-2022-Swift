@@ -21,7 +21,7 @@ for i in 1...1 {
 // Reto 1, ¿Es un anagrama?  Ej tren, rent is true rent contiene tren
 
 func comprobarAnagrama(_ str1: String,_ str2: String) -> Bool {
-    guard str1.count <= str2.count else {
+    guard str1.count == str2.count else {
         return false
     }
     
