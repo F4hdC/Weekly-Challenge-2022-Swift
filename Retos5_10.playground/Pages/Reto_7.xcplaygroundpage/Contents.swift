@@ -1,12 +1,18 @@
 import UIKit
 
+// Reto 7
 
 func contadorPalabras(frase: String) {
     
     let miArray = Array(frase.components(separatedBy: " "))
-    var miArrayAux = [String]()
+    var miArrayAux = [String]() // Para luego rellenarlo con palabras sin signos de puntuación
     
+    // Para luego añadir [Palabras:IntRepeticions]
+    var miDict = [String:Int]()
+    
+    // El Set es para quitar repeticiones
     var miSet = Set<String>()
+    
     for array in miArray {
         if array.hasPrefix(".") || array.hasPrefix(",") {
             var aux = array
@@ -34,7 +40,6 @@ func contadorPalabras(frase: String) {
         miArrayAux.append(array)
         miSet.insert(array)
     }
-    var miDict = [String:Int]()
     
     for word in miSet {
         miDict[word] = 0
@@ -54,5 +59,5 @@ func contadorPalabras(frase: String) {
 }
 
 
-contadorPalabras(frase: "hola F4hdC F4hdC, qué tal tió tal F4hdC.te")
+contadorPalabras(frase: "hola F4hdC F4hdC, qué tal tió tal F4hdC.")
 
