@@ -59,5 +59,37 @@ func contadorPalabras(frase: String) {
 }
 
 
-contadorPalabras(frase: "hola F4hdC F4hdC, qué tal tió tal F4hdC.")
+// versión mejorada con Regex
+
+
+func contPalabras(text: String) {
+    
+    var miText = NSMutableString(string: text)
+    let range = NSRange(location: 0, length: miText.length)
+    let regex = try! NSRegularExpression(pattern: "\\d")
+    let regex1 = try! NSRegularExpression(pattern: "\\W")
+    regex.replaceMatches(in: miText, range: range, withTemplate: " ")
+    regex1.replaceMatches(in: miText, range: range, withTemplate: " ")
+    
+    print(miText)
+    
+    var miDict = [String:Int]()
+    let miArray = Array(miText.components(separatedBy: " "))
+
+    for palabra in miArray {
+        let p = String(palabra)
+        if p == "" { continue }
+        if miDict[p] != nil {
+            miDict[p] = Int(miDict[p]!) + 1
+        }else{
+            miDict[p] = 1
+        }
+    }
+
+    print(miDict)
+    
+}
+
+contPalabras(text: "({}//hola FahdC qué tal tal FahdC, espero que bien! bien bien FahdC.")
+
 
