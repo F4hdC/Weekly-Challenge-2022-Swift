@@ -1,7 +1,7 @@
 ## Weekly-Challenge-2022-Swift
 Retos semanales de la comunidad MoureDev para practicar lógica de programación.
 
-#### Listado de Ejercicios 0 - 4
+### Listado de Ejercicios 0 - 4
 Reto #0: EL FAMOSO "FIZZ BUZZ”
 ```
 /*
@@ -50,9 +50,71 @@ Reto #3: ¿ES UN NÚMERO PRIMO?
  * - Los polígonos soportados serán Triángulo, Cuadrado y Rectángulo.
  * - Imprime el cálculo del área de un polígono de cada tipo.
  */
- ````
-
-
+ ```
+### Listado de Ejercicios 5 - 10
+Reto #5: ASPECT RATIO DE UNA IMAGEN
+```
+/*
+ * Crea un programa que se encargue de calcular el aspect ratio de una
+ * imagen a partir de una url.
+ * - Url de ejemplo: https://raw.githubusercontent.com/mouredev/
+ *   mouredev/master/mouredev_github_profile.png
+ * - Por ratio hacemos referencia por ejemplo a los "16:9" de una
+ *   imagen de 1920*1080px.
+ */
+ ```
+Reto #6: INVIRTIENDO CADENAS
+```
+/*
+ * Crea un programa que invierta el orden de una cadena de texto
+ * sin usar funciones propias del lenguaje que lo hagan de forma automática.
+ * - Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
+ */
+```
+Reto #7: CONTANDO PALABRAS
+```
+/*
+ * Crea un programa que cuente cuantas veces se repite cada palabra
+ * y que muestre el recuento final de todas ellas.
+ * - Los signos de puntuación no forman parte de la palabra.
+ * - Una palabra es la misma aunque aparezca en mayúsculas y minúsculas.
+ * - No se pueden utilizar funciones propias del lenguaje que
+ *   lo resuelvan automáticamente.
+ */
+```
+Reto #8: DECIMAL A BINARIO
+```
+/*
+ * Crea un programa se encargue de transformar un número
+ * decimal a binario sin utilizar funciones propias del lenguaje que lo hagan directamente.
+ */
+```
+Reto #9: CÓDIGO MORSE
+```
+/*
+ * Crea un programa que sea capaz de transformar texto natural a código
+ * morse y viceversa.
+ * - Debe detectar automáticamente de qué tipo se trata y realizar
+ *   la conversión.
+ * - En morse se soporta raya "—", punto ".", un espacio " " entre letras
+ *   o símbolos y dos espacios entre palabras "  ".
+ * - El alfabeto morse soportado será el mostrado en
+ *   https://es.wikipedia.org/wiki/Código_morse.
+ */
+```
+Reto #10: EXPRESIONES EQUILIBRADAS
+```
+/*
+ * Crea un programa que comprueba si los paréntesis, llaves y corchetes
+ * de una expresión están equilibrados.
+ * - Equilibrado significa que estos delimitadores se abren y cieran
+ *   en orden y de forma correcta.
+ * - Paréntesis, llaves y corchetes son igual de prioritarios.
+ *   No hay uno más importante que otro.
+ * - Expresión balanceada: { [ a * ( c + d ) ] - 5 }
+ * - Expresión no balanceada: { a * ( c + d ) ] - 5 }
+ */
+```
 
 
 Toda la información sobre estos retos se encuentra en **[retosdeprogramacion.com](https://retosdeprogramacion.com/)**
